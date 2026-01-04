@@ -1,0 +1,96 @@
+// _cards.scss
+// Common card styles
+
+@use '../abstracts' as *;
+
+// ============================================
+// BASE CARD
+// ============================================
+
+.card {
+  @include card-base;
+  padding: $spacing-lg;
+  
+  &-sm {
+    padding: $spacing-md;
+  }
+  
+  &-lg {
+    padding: $spacing-xl;
+  }
+  
+  &-hover {
+    cursor: pointer;
+    @include hover-lift;
+  }
+}
+
+// ============================================
+// CARD HEADER
+// ============================================
+
+.card-header {
+  padding-bottom: $spacing-md;
+  margin-bottom: $spacing-md;
+  border-bottom: $border-width-thin solid $color-gray-200;
+  
+  &-title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    color: $color-gray-900;
+    margin-bottom: $spacing-xs;
+  }
+  
+  &-description {
+    font-size: $font-size-sm;
+    color: $color-gray-600;
+  }
+}
+
+// ============================================
+// CARD BODY
+// ============================================
+
+.card-body {
+  flex: 1;
+}
+
+// ============================================
+// CARD FOOTER
+// ============================================
+
+.card-footer {
+  padding-top: $spacing-md;
+  margin-top: $spacing-md;
+  border-top: $border-width-thin solid $color-gray-200;
+  @include flex-between;
+}
+
+// ============================================
+// CARD VARIANTS
+// ============================================
+
+.card-bordered {
+  border: $border-width-medium solid $color-gray-300;
+}
+
+.card-elevated {
+  box-shadow: $shadow-lg;
+  border: none;
+}
+
+.card-flat {
+  border: none;
+  box-shadow: none;
+}
+
+.card-primary {
+  background: linear-gradient(135deg, $color-primary-light 0%, $color-primary 100%);
+  color: $color-white;
+  border: none;
+}
+
+.card-secondary {
+  background-color: $color-gray-50;
+  border-color: $color-gray-300;
+}

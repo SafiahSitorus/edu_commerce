@@ -1,0 +1,5 @@
+// abstracts/index.scss
+// Central export untuk semua abstracts
+
+@forward './variables';
+@forward './mixins';

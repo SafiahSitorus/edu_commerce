@@ -1,0 +1,184 @@
+// _utilities.scss
+// Utility classes untuk quick styling
+
+@use '../abstracts' as *;
+
+// ============================================
+// SPACING UTILITIES
+// ============================================
+
+// Margin
+.m-0 { margin: 0; }
+.m-auto { margin: auto; }
+.mt-auto { margin-top: auto; }
+.mr-auto { margin-right: auto; }
+.mb-auto { margin-bottom: auto; }
+.ml-auto { margin-left: auto; }
+
+// Padding
+.p-0 { padding: 0; }
+
+// ============================================
+// DISPLAY UTILITIES
+// ============================================
+
+.d-none { display: none; }
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-inline-block { display: inline-block; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+
+// ============================================
+// FLEX UTILITIES
+// ============================================
+
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+
+.align-start { align-items: flex-start; }
+.align-center { align-items: center; }
+.align-end { align-items: flex-end; }
+.align-stretch { align-items: stretch; }
+
+.flex-1 { flex: 1; }
+.flex-auto { flex: auto; }
+.flex-none { flex: none; }
+
+// ============================================
+// TEXT UTILITIES
+// ============================================
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+.text-uppercase { text-transform: uppercase; }
+.text-lowercase { text-transform: lowercase; }
+.text-capitalize { text-transform: capitalize; }
+
+.text-truncate { @include text-truncate; }
+.line-clamp-2 { @include line-clamp(2); }
+.line-clamp-3 { @include line-clamp(3); }
+
+// ============================================
+// FONT WEIGHT
+// ============================================
+
+.font-light { font-weight: $font-weight-light; }
+.font-normal { font-weight: $font-weight-normal; }
+.font-medium { font-weight: $font-weight-medium; }
+.font-semibold { font-weight: $font-weight-semibold; }
+.font-bold { font-weight: $font-weight-bold; }
+
+// ============================================
+// COLOR UTILITIES
+// ============================================
+
+.text-primary { color: $color-primary; }
+.text-secondary { color: $color-secondary; }
+.text-accent { color: $color-accent; }
+.text-success { color: $color-success; }
+.text-warning { color: $color-warning; }
+.text-error { color: $color-error; }
+.text-white { color: $color-white; }
+.text-gray { color: $color-gray-600; }
+
+.bg-primary { background-color: $color-primary; }
+.bg-secondary { background-color: $color-secondary; }
+.bg-accent { background-color: $color-accent; }
+.bg-white { background-color: $color-white; }
+.bg-gray { background-color: $color-gray-100; }
+
+// ============================================
+// SIZING UTILITIES
+// ============================================
+
+.w-full { width: 100%; }
+.w-auto { width: auto; }
+.h-full { height: 100%; }
+.h-auto { height: auto; }
+
+.min-h-screen { min-height: 100vh; }
+.max-w-container { max-width: $container-max-width; }
+
+// ============================================
+// POSITION UTILITIES
+// ============================================
+
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.sticky { position: sticky; }
+
+// ============================================
+// OVERFLOW UTILITIES
+// ============================================
+
+.overflow-hidden { overflow: hidden; }
+.overflow-auto { overflow: auto; }
+.overflow-scroll { overflow: scroll; }
+
+// ============================================
+// SHADOW UTILITIES
+// ============================================
+
+.shadow-sm { box-shadow: $shadow-sm; }
+.shadow-md { box-shadow: $shadow-md; }
+.shadow-lg { box-shadow: $shadow-lg; }
+.shadow-xl { box-shadow: $shadow-xl; }
+.shadow-none { box-shadow: none; }
+
+// ============================================
+// BORDER RADIUS UTILITIES
+// ============================================
+
+.rounded-none { border-radius: $radius-none; }
+.rounded-sm { border-radius: $radius-sm; }
+.rounded-md { border-radius: $radius-md; }
+.rounded-lg { border-radius: $radius-lg; }
+.rounded-xl { border-radius: $radius-xl; }
+.rounded-full { border-radius: $radius-full; }
+
+// ============================================
+// CURSOR UTILITIES
+// ============================================
+
+.cursor-pointer { cursor: pointer; }
+.cursor-not-allowed { cursor: not-allowed; }
+.cursor-default { cursor: default; }
+
+// ============================================
+// VISIBILITY UTILITIES
+// ============================================
+
+.visible { visibility: visible; }
+.invisible { visibility: hidden; }
+.opacity-0 { opacity: 0; }
+.opacity-50 { opacity: 0.5; }
+.opacity-100 { opacity: 1; }
+
+// ============================================
+// RESPONSIVE UTILITIES
+// ============================================
+
+@include respond-to('md') {
+  .md\:d-none { display: none; }
+  .md\:d-block { display: block; }
+  .md\:d-flex { display: flex; }
+}
+
+@include respond-to('lg') {
+  .lg\:d-none { display: none; }
+  .lg\:d-block { display: block; }
+  .lg\:d-flex { display: flex; }
+}

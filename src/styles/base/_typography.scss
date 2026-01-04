@@ -1,0 +1,98 @@
+// _typography.scss
+// Global typography styles
+
+@use '../abstracts' as *;
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-normal;
+  color: $color-gray-900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+  color: $color-gray-900;
+}
+
+h1 {
+  font-size: $font-size-4xl;
+  margin-bottom: $spacing-lg;
+}
+
+h2 {
+  font-size: $font-size-3xl;
+  margin-bottom: $spacing-md;
+}
+
+h3 {
+  font-size: $font-size-2xl;
+  margin-bottom: $spacing-md;
+}
+
+h4 {
+  font-size: $font-size-xl;
+  margin-bottom: $spacing-sm;
+}
+
+h5 {
+  font-size: $font-size-lg;
+  margin-bottom: $spacing-sm;
+}
+
+h6 {
+  font-size: $font-size-base;
+  margin-bottom: $spacing-sm;
+}
+
+p {
+  margin-bottom: $spacing-md;
+  color: $color-gray-700;
+}
+
+a {
+  color: $color-primary;
+  transition: color $transition-base;
+  
+  &:hover {
+    color: $color-primary-dark;
+  }
+}
+
+strong, b {
+  font-weight: $font-weight-bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+small {
+  font-size: $font-size-sm;
+}
+
+code {
+  font-family: $font-mono;
+  font-size: $font-size-sm;
+  padding: $spacing-xs $spacing-sm;
+  background-color: $color-gray-100;
+  border-radius: $radius-sm;
+}
+
+pre {
+  font-family: $font-mono;
+  font-size: $font-size-sm;
+  padding: $spacing-md;
+  background-color: $color-gray-900;
+  color: $color-white;
+  border-radius: $radius-md;
+  overflow-x: auto;
+  
+  code {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+}

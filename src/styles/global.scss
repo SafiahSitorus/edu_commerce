@@ -1,0 +1,65 @@
+// global.scss
+// Main entry point untuk semua global styles
+// Import file ini di app/layout.tsx
+
+// ============================================
+// ABSTRACTS (Variables & Mixins)
+// ============================================
+@use './abstracts' as *;
+
+// ============================================
+// BASE (Reset & Typography)
+// ============================================
+@use './base';
+
+// ============================================
+// COMPONENTS (Common UI Components)
+// ============================================
+@use './components';
+
+// ============================================
+// GLOBAL CONTAINER
+// ============================================
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+// ============================================
+// LOADING SPINNER
+// ============================================
+.loader {
+  @include spin;
+  border: 2px solid $color-gray-200;
+  border-top-color: $color-primary;
+  border-radius: $radius-full;
+}
+
+// ============================================
+// ANIMATIONS
+// ============================================
+.fade-in {
+  @include fade-in;
+}
+
+.slide-up {
+  @include slide-up;
+}
+
+// ============================================
+// FOCUS VISIBLE
+// ============================================
+*:focus-visible {
+  outline: 2px solid $color-primary;
+  outline-offset: 2px;
+}
+
+// ============================================
+// SELECTION
+// ============================================
+::selection {
+  background-color: rgba($color-primary, 0.2);
+  color: $color-gray-900;
+}
