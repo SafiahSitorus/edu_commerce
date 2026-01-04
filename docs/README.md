@@ -1,6 +1,4 @@
-# EduBO - Education Back Office
-
-A modern, scalable, and maintainable Next.js application for education management system.
+# Edu Commerce
 
 ## 🚀 Tech Stack
 
@@ -209,8 +207,6 @@ Pre-installed components:
 - Card
 - Form
 
-All components are customizable and follow Tailwind CSS patterns.
-
 ## 📝 API Endpoints
 
 ### Authentication
@@ -296,11 +292,3 @@ npm start
 
 ---
 
-**Built with ❤️ using Next.js & Redux Toolkit**
-
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
